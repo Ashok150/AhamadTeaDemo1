@@ -18,11 +18,10 @@ public static void main(String[] args) throws Exception
 {
 	
 //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32_91\\chromedriver.exe");
-
 WebDriverManager.chromedriver().setup();
 WebDriver driver= new ChromeDriver();
-driver.get("https://ahmadteausa.com/");
-Thread.sleep(5000);
+driver.get("https://pnrstage.ic3.com:7451/ebc2/");
+Thread.sleep(7000);
 driver.manage().window().maximize();
 Utility.takeSnapShot(driver,"HomePage.png");
 //Utility.takeSnapShot(driver);
@@ -35,9 +34,10 @@ Utility.takeSnapShot(driver,"Gifts.png");
 
 //Click Policeman Telephone Box
 driver.findElement(By.cssSelector("a[href^='/collections/gifts/products/policeman-telephone-box']")).click();
-Thread.sleep(10000);
-driver.findElement(By.xpath("//div[@class='subscribe-popup popup active']//div[@class='popup-close js-class']")).click();
+Thread.sleep(2000);
+//driver.findElement(By.cssSelector("//div/button[@class='product-shop-add-to-cart js-product-shop-add-to-cart btn btn-solid']")).click();
 Utility.takeSnapShot(driver,"TelephoneBox.png");
+// 
 
 // - IF NEWSLETTER DIALOG OPENS - CLICK X - IF NOT - CONTINUE
 /*

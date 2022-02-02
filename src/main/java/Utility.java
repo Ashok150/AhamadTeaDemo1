@@ -7,8 +7,10 @@ import org.openqa.selenium.WebDriver;
 
 public class Utility {
 	
-	private static final String fileWithPath = "C:/Users/HP/eclipse-workspace/Demo1/Screenshots/";
-	
+	private static final String userdir = System.getProperty("user.dir");
+	private static final String fileWithPath = userdir + "//Screnshots";
+	//"C:/Users/ashok.kumbar/Documents/GitHub/AhamadTeaDemo1/Screenshots/";
+
 	public static void takeSnapShot(WebDriver webdriver, String fileName) throws Exception{
 		//Convert web driver object to TakeScreenshot
 		TakesScreenshot scrShot =((TakesScreenshot)webdriver);
