@@ -24,6 +24,8 @@ driver.get("https://pnrstage.ic3.com:7451/ebc2/");
 Thread.sleep(7000);
 driver.manage().window().maximize();
 Utility.takeSnapShot(driver,"HomePage.png");
+
+
 //Utility.takeSnapShot(driver);
 
 //Click Gifts
